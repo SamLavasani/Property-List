@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Property" representedClassName=".Property" syncable="YES" codeGenerationType="category">
+        <attribute name="boolId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="consructionYear" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="daysActive" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="livingArea" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="objectType" attributeType="String" syncable="YES"/>
+        <attribute name="published" attributeType="String" syncable="YES"/>
+        <attribute name="rooms" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="streetAddress" attributeType="String" syncable="YES"/>
+        <attribute name="thumb" attributeType="String" syncable="YES"/>
+        <attribute name="thumbData" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Property" positionX="-63" positionY="-18" width="128" height="195"/>
+    </elements>
+</model>

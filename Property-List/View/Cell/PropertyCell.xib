@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PropertyCell" rowHeight="80" id="KGk-i7-Jjw" customClass="PropertyCell" customModule="Property_List" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kWe-CS-Ug6">
+                        <rect key="frame" x="10" y="10" width="59.5" height="59.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="kWe-CS-Ug6" secondAttribute="height" multiplier="1:1" id="yhl-sC-dO7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P23-UU-Rs7">
+                        <rect key="frame" x="79.5" y="40" width="34" height="19.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCK-Kh-xud">
+                        <rect key="frame" x="335" y="25" width="30" height="30"/>
+                        <state key="normal" image="follow">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <state key="selected" backgroundImage="follow-checked"/>
+                        <connections>
+                            <action selector="favouriteButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="C84-CT-X7g"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbC-dq-TDz">
+                        <rect key="frame" x="79.5" y="14" width="39" height="22"/>
+                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YbC-dq-TDz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-15" id="15l-q3-RJ8"/>
+                    <constraint firstItem="P23-UU-Rs7" firstAttribute="leading" secondItem="kWe-CS-Ug6" secondAttribute="trailing" constant="10" id="6v7-kD-GsI"/>
+                    <constraint firstAttribute="trailing" secondItem="cCK-Kh-xud" secondAttribute="trailing" constant="10" id="AEs-3g-GDo"/>
+                    <constraint firstAttribute="bottom" secondItem="kWe-CS-Ug6" secondAttribute="bottom" constant="10" id="OTd-5c-b4P"/>
+                    <constraint firstItem="cCK-Kh-xud" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="XGh-9T-GFf"/>
+                    <constraint firstItem="kWe-CS-Ug6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="chp-ao-wXt"/>
+                    <constraint firstItem="P23-UU-Rs7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="10" id="hJJ-95-z3G"/>
+                    <constraint firstItem="kWe-CS-Ug6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="qsy-Kr-CDQ"/>
+                    <constraint firstItem="YbC-dq-TDz" firstAttribute="leading" secondItem="kWe-CS-Ug6" secondAttribute="trailing" constant="10" id="zhF-wi-8cM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="favouriteButton" destination="cCK-Kh-xud" id="SDp-yP-yx0"/>
+                <outlet property="priceLabel" destination="P23-UU-Rs7" id="eN2-at-w9p"/>
+                <outlet property="thumbNail" destination="kWe-CS-Ug6" id="gth-ac-wLl"/>
+                <outlet property="titleLabel" destination="YbC-dq-TDz" id="eek-tM-RHM"/>
+            </connections>
+            <point key="canvasLocation" x="177.536231884058" y="105.80357142857143"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="follow" width="30" height="30"/>
+        <image name="follow-checked" width="30" height="30"/>
+    </resources>
+</document>
